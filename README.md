@@ -22,7 +22,7 @@ Hecho esto, dentro del mismo, se instala la herramienta de Telepresence con Helm
 $ telepresence helm install
 Traffic Manager installed successfully
 ```
-![image](https://github.com/arodalfer/telepresence/assets/136476284/c19e69f3-5d87-4600-bf44-854d9cdf3bc9)
+![image](https://github.com/arodalfer/telepresence/assets/136476284/f823ab77-0267-422e-94a8-4aa9c40c8b0b)
 
 Este comando instala en el clúster un Traffic Manager. Es el encargado de interceptar y redireccionar el tráfico entre el clúster y la máquina local. Por defecto, se creará un nuevo namesapce llamado ambassador en el que se despliega la instalación.
 
