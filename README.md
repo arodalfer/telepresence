@@ -20,7 +20,9 @@ $ kind create cluster
 Hecho esto, dentro del mismo, se instala la herramienta de Telepresence con Helm:
 ```
 $ telepresence helm install
+```diff
 ! Traffic Manager installed successfully
+```
 ```
 ```diff
 - hola
