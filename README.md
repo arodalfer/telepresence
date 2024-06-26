@@ -20,11 +20,11 @@ $ kind create cluster
 Hecho esto, dentro del mismo, se instala la herramienta de Telepresence con Helm:
 ```
 $ telepresence helm install
-Traffic Manager installed successfully
 ```
 ![image](https://github.com/arodalfer/telepresence/assets/136476284/f823ab77-0267-422e-94a8-4aa9c40c8b0b)
 
 Este comando instala en el clúster un Traffic Manager. Es el encargado de interceptar y redireccionar el tráfico entre el clúster y la máquina local. Por defecto, se creará un nuevo namesapce llamado ambassador en el que se despliega la instalación.
+![image](https://github.com/arodalfer/telepresence/assets/136476284/75db7764-9d5e-46ff-a44f-fb3c4a7a8721)
 
 # Contenerización mediante Docker de la aplicación que se quiere desplegar
 El archivo app.py ejecuta una aplicación web con Python que imprime por pantalla un simple HOLA MUNDO. Fue necesario contenerizarla mediante Docker para poder desplegarla en el clúster. Posteriormente se subió a Docker Hub para hacerla accesible.
@@ -33,6 +33,8 @@ docker build -t arodal/demo:v1 .
 docker login
 docker push arodal/demo:v1
 ```
+![image](https://github.com/arodalfer/telepresence/assets/136476284/f9a0fa57-a9a1-4593-8051-9d3c84ca0198)
+
 # Despliegue de la aplicación en el clúster de Kubernetes
 En la carpeta kubernetes, están definidos los recursos necesarios para realizar el despligue. Existe un deployment que usa como imagen base del contenedor la anterior y un servicio que expone la aplicación. Para realizar esto, basta con ejecutar los siguientes comandos:
 ```
