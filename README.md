@@ -24,6 +24,7 @@ $ telepresence helm install
 ![image](https://github.com/arodalfer/telepresence/assets/136476284/f823ab77-0267-422e-94a8-4aa9c40c8b0b)
 
 Este comando instala en el clúster un Traffic Manager. Es el encargado de interceptar y redireccionar el tráfico entre el clúster y la máquina local. Por defecto, se creará un nuevo namesapce llamado ambassador en el que se despliega la instalación.
+
 ![image](https://github.com/arodalfer/telepresence/assets/136476284/75db7764-9d5e-46ff-a44f-fb3c4a7a8721)
 
 # Contenerización mediante Docker de la aplicación que se quiere desplegar
@@ -69,8 +70,6 @@ Esto hará que todo el tráfico que llegue a través del servicio sea enviado al
 ```
 pip install -r requirements && python3 app.py
 ```
-![image](https://github.com/arodalfer/telepresence/assets/136476284/a388965b-9597-43ca-90a7-8c46ed2bd12b)
-
 Se puede acceder a la aplicación web desplegada en el clúster mediante la ip del nodo en el que se ejecuta y el puerto que expone el servicio asociado:
 http://172.18.0.2:32066/
 
