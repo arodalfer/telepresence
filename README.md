@@ -20,6 +20,14 @@ kind create cluster
 Hecho esto, dentro del mismo, se instala la herramienta de Telepresence con Helm:
 ```
 telepresence helm install
+Traffic Manager installed successfully
+```
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
 ```
 Este comando instala en el clúster un Traffic Manager. Es el encargado de interceptar y redireccionar el tráfico entre el clúster y la máquina local. Por defecto, se creará un nuevo namesapce llamado ambassador en el que se despliega la instalación.
 
