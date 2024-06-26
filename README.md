@@ -41,6 +41,9 @@ En la carpeta kubernetes, están definidos los recursos necesarios para realizar
 kubectl apply -f pod.yaml
 kubectl apply -f service.yaml
 ```
+![image](https://github.com/arodalfer/telepresence/assets/136476284/cfd288dc-5c62-4f24-ae0a-b23bdae6e862)
+![image](https://github.com/arodalfer/telepresence/assets/136476284/0c063e24-4e8b-4cf9-bcf4-19c98f2d28be)
+
 Con Telepresence se intercepta el tráfico que llega a través del servicio y este es redirigido a un puerto de la máquina local.
 
 # Establecimiento de conexión con el clúster
