@@ -23,7 +23,7 @@ telepresence helm install
 Traffic Manager installed successfully
 ```
 ```diff
-- text in red
+- hola
 + text in green
 ! text in orange
 # text in gray
