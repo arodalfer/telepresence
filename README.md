@@ -20,16 +20,10 @@ $ kind create cluster
 Hecho esto, dentro del mismo, se instala la herramienta de Telepresence con Helm:
 ```
 $ telepresence helm install
-```diff
-! Traffic Manager installed successfully
+Traffic Manager installed successfully
 ```
-```
-```diff
-- hola
-+ text in green
-! text in orange
-@@ text in purple (and bold)@@
-```
+![image](https://github.com/arodalfer/telepresence/assets/136476284/c19e69f3-5d87-4600-bf44-854d9cdf3bc9)
+
 Este comando instala en el clúster un Traffic Manager. Es el encargado de interceptar y redireccionar el tráfico entre el clúster y la máquina local. Por defecto, se creará un nuevo namesapce llamado ambassador en el que se despliega la instalación.
 
 # Contenerización mediante Docker de la aplicación que se quiere desplegar
