@@ -51,6 +51,8 @@ Para establecer una sesión con el clúster es necesario ejecutar el siguiente c
 ```
 telepresence connect
 ```
+![image](https://github.com/arodalfer/telepresence/assets/136476284/43c44b2c-cb1b-40e6-930b-17056cd848c3)
+
 Desde este momento, Telepresence estará conectado al namespace por defecto del clúster y todos los servicios deplegados en él podrán ser interceptados.
 
 # Interceptación del servicio y reenvío del tráfico a nuestra máquina local
@@ -61,6 +63,8 @@ Con este comando se aprecian todos los servicios que pueden ser interceptados. P
 ```
 telepresence intercept demo --port 4000
 ```
+![image](https://github.com/arodalfer/telepresence/assets/136476284/30947aa4-51cb-4479-a8f5-97e744883582)
+
 Esto hará que todo el tráfico que llegue a través del servicio sea enviado al puerto 4000 de la máquina local. Por lo tanto, si ahora se ejecuta el archivo app.py localmente en ese mismo puerto, todos los cambios que se hagan en local, se verán reflejados directamente en el clúster. Para lanzar la aplicación web localmente usaremos el siguiente comando:
 ```
 pip install -r requirements && python3 app.py
