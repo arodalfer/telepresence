@@ -9,24 +9,23 @@ Para poder seguir esta guía, es necesario tener instaladas las siguientes herra
 
 A mayores se usará Kind para crear un clúster en local sobre el que realizar las pruebas. Con el script install_tools.sh proporcionado, se podrá verificar si estas 4 herramientas están ya instaladas y en el caso de que no lo estén, hacerlo.
 ```
-./install_tools.sh
+$ ./install_tools.sh
 ```
 
 # Inicialización e instalación de Telepresence en el propio clúster 
 Con el siguiente comando se creará un clúster local con kind:
 ```
-kind create cluster
+$ kind create cluster
 ```
 Hecho esto, dentro del mismo, se instala la herramienta de Telepresence con Helm:
 ```
-telepresence helm install
-Traffic Manager installed successfully
+$ telepresence helm install
+! Traffic Manager installed successfully
 ```
 ```diff
 - hola
 + text in green
 ! text in orange
-# text in gray
 @@ text in purple (and bold)@@
 ```
 Este comando instala en el clúster un Traffic Manager. Es el encargado de interceptar y redireccionar el tráfico entre el clúster y la máquina local. Por defecto, se creará un nuevo namesapce llamado ambassador en el que se despliega la instalación.
