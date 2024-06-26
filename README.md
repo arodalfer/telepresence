@@ -8,3 +8,7 @@ Para poder seguir esta guía, es necesario tener instaladas las siguientes herra
 3. Telepresence
 
 A mayores se usará kind para crear un clúster sobre el que realizar las pruebas de manera local. Con el script install_tools.sh proporcionado, se podrá verificar si estas 4 herramientas están instaladas y en el caso de que no lo estén, hacerlo.
+```
+./install_tools.sh
+```
+
