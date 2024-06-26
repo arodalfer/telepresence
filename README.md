@@ -72,9 +72,11 @@ pip install -r requirements && python3 app.py
 ![image](https://github.com/arodalfer/telepresence/assets/136476284/a388965b-9597-43ca-90a7-8c46ed2bd12b)
 
 Se puede acceder a la aplicación web desplegada en el clúster mediante la ip interna del servicio y el puerto expuesto: http://10.96.218.189:4000/
+
 ![image](https://github.com/arodalfer/telepresence/assets/136476284/2d02538b-e638-4072-bf67-ed5dd10e0c4e)
 ![image](https://github.com/arodalfer/telepresence/assets/136476284/5179f09a-86c9-403b-bef1-2360646434ca)
 
 Si en el código ejecutado en local se realiza algún cambio, automáticamente se verá reflejado en el propio clúster.
+
 ![image](https://github.com/arodalfer/telepresence/assets/136476284/0096ea79-8655-4c32-b73e-640539896bf5)
 ![image](https://github.com/arodalfer/telepresence/assets/136476284/3a4fe0e8-f3a3-41df-8d57-cf04813e4fde)
