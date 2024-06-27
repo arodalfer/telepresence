@@ -79,6 +79,7 @@ http://172.18.0.2:32066/
 Si en el código ejecutado en local se realiza algún cambio, automáticamente se verá reflejado en el propio clúster.
 
 ![image](https://github.com/arodalfer/telepresence/assets/136476284/5609a2ff-3c71-4c98-a484-71088e4f2c5b)
+
 ![image](https://github.com/arodalfer/telepresence/assets/136476284/b231c283-7913-47a0-975b-d588d9e952d5)
 
 Una vez se cierre la sesión establecida con Telepresence, los cambios realizados hasta el momento desaparecerán y el servicio volverá a su estado inicial.
