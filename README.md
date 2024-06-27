@@ -23,7 +23,7 @@ $ telepresence helm install
 ```
 ![image](https://github.com/arodalfer/telepresence/assets/136476284/f823ab77-0267-422e-94a8-4aa9c40c8b0b)
 
-Este comando instala en el clúster un Traffic Manager. Es el encargado de interceptar y redireccionar el tráfico entre el clúster y la máquina local. Por defecto, se creará un nuevo namesapce llamado ambassador en el que se despliega la instalación.
+Este comando instala en el clúster un Traffic Manager. Es el encargado de interceptar y redireccionar el tráfico entre el clúster y la máquina local. Por defecto, se creará un nuevo namespace llamado ambassador en el que se despliega la instalación.
 
 ![image](https://github.com/arodalfer/telepresence/assets/136476284/25515ecb-9561-4d60-a813-ab0840e05db1)
 
@@ -80,3 +80,9 @@ Si en el código ejecutado en local se realiza algún cambio, automáticamente s
 
 ![image](https://github.com/arodalfer/telepresence/assets/136476284/5609a2ff-3c71-4c98-a484-71088e4f2c5b)
 ![image](https://github.com/arodalfer/telepresence/assets/136476284/b231c283-7913-47a0-975b-d588d9e952d5)
+
+Una vez se cierre la sesión establecida con Telepresence, los cambios realizados hasta el momento desaparecerán y el servicio volverá a su estado inicial.
+Para cerrar sesión, es necesario ejecutar el siguiente comando:
+```
+telepresence quit -s
+```
